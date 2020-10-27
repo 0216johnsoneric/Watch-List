@@ -1,0 +1,18 @@
+<h2>Create a Plan</h2>
+
+<form id="createmovie" class="button-size">
+  <textarea type="text" name="movie"></textarea>
+  <button type="submit">Save Plan!</button>
+</form>
+
+<h2>Update a Movie</h2>
+
+<form id="updatemovie" class="button-size">
+  <select name="id">
+		{{#each movies_db}}
+			<option value="{{this.id}}">{{this.movie}}</option>
+		{{/each}}
+	</select>
+  <textarea type="text" name="movie" placeholder="movie"></textarea>
+  <button type="submit">Update Movie!</button>
+</form>

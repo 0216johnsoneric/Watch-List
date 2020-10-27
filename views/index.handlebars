@@ -1,0 +1,29 @@
+<h1>Movies List</h1>
+
+<ul>
+  {{#each movies_db}}
+  <li>
+    <p>
+      {{this.id}}. {{this.movie}}
+
+      <button data-planid="{{this.id}}" class="delplan">Delete Movie!</button>
+    </p>
+  </li>
+  {{/each}}
+</ul>
+
+
+{{!-- <h2>Update a Plan</h2>
+<form id="updateplan" class="button-size">
+  <select name="id">
+		{{#each plans}}
+			<option value="{{this.id}}">{{this.plan}}</option>
+		{{/each}}
+	</select>
+  <textarea type="text" name="plan" placeholder="plan"></textarea>
+  <button type="submit">Update Plan!</button>
+</form>
+  --}}
+
+  
+ 
